@@ -12,29 +12,22 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “Everything Starts as a Square” is a book and video course that
-          teaches you a simple method to designing icons that anyone can learn.
+          “Humans in the extreme” is a book that explores humanity and how it revolves around extreme in all areas.
         </p>
         <p className="mt-4">
-          Before I learned how to design icons myself, I always imagined that
-          they were drawn by hand using the pen tool, some sort of fancy
-          graphics tablet, and hours and hours spent manually fine-tuning bezier
-          curves.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Morbi finibus, sem et aliquet accumsan, justo odio finibus orci, id vulputate erat enim vitae libero. Suspendisse egestas vitae est id porttitor. Nunc at dictum sem. Nullam ultricies id metus nec blandit. Donec ac nunc in velit vestibulum maximus non sed sapien. Vestibulum eu erat rhoncus magna imperdiet laoreet. Pellentesque ut massa nec elit ullamcorper interdum. 
         </p>
         <p className="mt-4">
-          But it turns out this isn’t how great icon designers work at all.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
         </p>
         <p className="mt-4">
-          In “Everything Starts as a Square”, you’ll learn the systems experts
-          use to create pixel perfect icons, without relying on a steady hand.
+          In “Humans in the extreme”, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
         </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
-            'Using boolean operations to combine basic shapes into complex icons',
-            'How to adapt icons to different sizes',
-            'Translating icons from an outline style to a solid style',
-            'Identifying the characteristics that make an icon set cohesive',
-            'Figma features and keyboard shortcuts to speed up your workflow',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.',
           ].map((feature) => (
             <li key={feature} className="flex">
               <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
@@ -43,9 +36,7 @@ export function Introduction() {
           ))}
         </ul>
         <p className="mt-8">
-          By the end of the book, you’ll have all the confidence you need to dig
-          in and start creating beautiful icons that can hold their own against
-          any of the sets you can find online.
+          By the end of the book, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
         </p>
         <p className="mt-10">
           <Link

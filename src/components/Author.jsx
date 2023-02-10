@@ -34,7 +34,7 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="author-title">
+            <SectionHeading number="3" id="author-title">
               Author
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
@@ -42,13 +42,7 @@ export function Author() {
                the author behind ‘Humans in the Extreme’.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I’ve been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I’m an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I’ve worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla ipsum, placerat pretium varius eget, pretium a metus. Ut sem lectus, commodo vel ex sed, venenatis dapibus ligula. Nunc pulvinar venenatis condimentum. Quisque quis elit ultricies, mollis arcu vel, feugiat est. Proin iaculis, libero et fringilla ullamcorper, urna massa maximus turpis, sit amet pretium nunc sapien ac lorem. Phasellus non cursus diam, ut tristique elit. Duis quis dolor porta, convallis massa ut, ullamcorper mi. Integer convallis nulla sollicitudin, tempus mauris quis, consequat magna. Ut a dapibus sapien. Nulla a libero fermentum, placerat leo sed, varius erat.
             </p>
             <p className="mt-8">
               <Link

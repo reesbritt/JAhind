@@ -13,15 +13,15 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “This method of designing icons is genius. I wish I had known this
-          method a lot sooner.”
+          “An outstanding addition to our knowledge about the human race and our relationship with the extreme.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
         <strong className="font-semibold text-blue-600 before:content-['—_']">
-          Stacey Solomon
+          Prof Michael Kirby FRCP
         </strong>
-        , Founder at Retail Park
+        <br/>
+        Editor - Trends in urology & Mens health
       </figcaption>
     </figure>
   )

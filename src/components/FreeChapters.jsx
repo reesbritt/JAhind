@@ -20,7 +20,7 @@ export function FreeChapters() {
               Get the free sample chapters
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              This is something thats possible, but equally its probablt not the sort of book you want to offer extended previews for?
+              This is an option, or we repurpose this to be join the waiting list prior to the book being launched
             </p>
           </div>
           <form className="lg:pl-16">
