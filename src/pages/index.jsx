@@ -31,7 +31,7 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <TableOfContents />
-      <Testimonial
+      {/* <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
           name: 'Tommy Stroman',
@@ -43,7 +43,7 @@ export default function Home() {
           “We could include any additional reviews or testomonials if and when you have them!”
         </p>
       </Testimonial>
-      <FreeChapters />
+      <FreeChapters /> */}
       <Pricing />
       <Author />
       <Footer />

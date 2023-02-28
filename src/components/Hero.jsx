@@ -50,10 +50,10 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              An exploration into the human obsession with extreme.
+            A journey into the chiselling away of our humanity.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              Something something about what the book is written by J.A Hind.
+             A thought-provoking discourse about our obsession with the extreme, written by J.A Hind.
             </p>
             <div className="mt-8 flex gap-4">
               <Button href="#free-chapters" color="blue">

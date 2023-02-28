@@ -12,14 +12,14 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “Humans in the extreme” is a book that explores humanity and how it revolves around extreme in all areas.
+          “Humans in the extreme” will open your eyes to the patent compulsion we have for the extreme, our weakness to resist it and the consequences of this on humanity.
         </p>
         <p className="mt-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Morbi finibus, sem et aliquet accumsan, justo odio finibus orci, id vulputate erat enim vitae libero. Suspendisse egestas vitae est id porttitor. Nunc at dictum sem. Nullam ultricies id metus nec blandit. Donec ac nunc in velit vestibulum maximus non sed sapien. Vestibulum eu erat rhoncus magna imperdiet laoreet. Pellentesque ut massa nec elit ullamcorper interdum. 
+        Humans in the Extreme is a bracing and vital read and the first of its kind to expose the beguiling, yet deeply disturbing, fascination we have with the extreme. Author and psychotherapist, JA Hind, takes the reader into an unflinching no-holds barred discussion of the depraved aspects of our human nature, the perplexing reasons that drive us to do the terrible things we do and the repercussions this is having on our capacity to feel – even for a second. </p>
+         <p className="mt-4">
+         Without distorting the truth of the sciences, Humans in the Extreme profoundly examines the systems and processes that lead so-called ordinary people to commit appalling acts of violence or stand by and do nothing to stop them. By unpicking the origins and revelations of extreme, as it has unfolded through the passage of time, this book encourages each of us to question our own affiliation with the extreme and the fundamental beliefs and constructs of the world that we have come to know.  Having garnered information from scientists, biologists, historians and psychologists alike, Humans in the Extreme crosses the divide between science and human emotion, making it not only a compelling read but also accessible to a wide audience of people.
         </p>
-        <p className="mt-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
-        </p>
+        {/*}
         <p className="mt-4">
           In “Humans in the extreme”, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
         </p>
@@ -34,10 +34,7 @@ export function Introduction() {
               <span className="ml-4">{feature}</span>
             </li>
           ))}
-        </ul>
-        <p className="mt-8">
-          By the end of the book, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a velit eros.
-        </p>
+        </ul> */}
         <p className="mt-10">
           <Link
             href="#free-chapters"

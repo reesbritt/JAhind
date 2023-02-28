@@ -25,14 +25,14 @@ export function Author() {
       </div>
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
         <div className="bg-slate-50 pt-px sm:rounded-6xl">
-          <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
+          {/* <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
               className="absolute inset-0 h-full w-full object-cover"
               src={authorImage}
               alt=""
               sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
             />
-          </div>
+          </div> */}
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
             <SectionHeading number="3" id="author-title">
               Author
@@ -42,7 +42,9 @@ export function Author() {
                the author behind ‘Humans in the Extreme’.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla ipsum, placerat pretium varius eget, pretium a metus. Ut sem lectus, commodo vel ex sed, venenatis dapibus ligula. Nunc pulvinar venenatis condimentum. Quisque quis elit ultricies, mollis arcu vel, feugiat est. Proin iaculis, libero et fringilla ullamcorper, urna massa maximus turpis, sit amet pretium nunc sapien ac lorem. Phasellus non cursus diam, ut tristique elit. Duis quis dolor porta, convallis massa ut, ullamcorper mi. Integer convallis nulla sollicitudin, tempus mauris quis, consequat magna. Ut a dapibus sapien. Nulla a libero fermentum, placerat leo sed, varius erat.
+            My name is Jane Amelda Hind, born in North London in 1964 to Maureen and Charles Feeney. My family has originated from Cleggan, a quaint fishing village on the west coast of Ireland which holds much appeal for writers and artists for its beauty and tragic history. 
+            I am a qualified psychotherapist and over the years I has worked with victims of physical and/or sexual violence, offering clinical support to ex-offenders of violence and sexual abuse - in a bid to reduce and manage any risk of them further offending. 
+            Whilst my encounters with perpetrators of violence have surged in recent years, so too has my interest to understand our human relationship with the extreme, in all its forms.
             </p>
             <p className="mt-8">
               <Link
