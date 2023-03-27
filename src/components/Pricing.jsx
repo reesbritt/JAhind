@@ -105,7 +105,7 @@ export function Pricing() {
           Get your copy
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          'Humans in the Extreme' is available to purchase as a physical book, or alternatively as an audiobook through audible.
+        &apos;Humans in the Extreme&apos; is available to purchase as a physical book, or alternatively as an audiobook through audible.
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">

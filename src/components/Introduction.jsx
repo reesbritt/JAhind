@@ -40,7 +40,7 @@ export function Introduction() {
             href="#mailing"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Sign up for updates on 'Humans in the Extreme'{' '}
+            Sign up for updates on &apos;Humans in the Extreme&apos;{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
