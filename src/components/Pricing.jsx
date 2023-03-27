@@ -47,7 +47,7 @@ function Plan({ name, description, price, features, href, featured }) {
           </span>
           <span
             className={clsx(
-              'ml-1 mt-1 text-7xl tracking-tight',
+              'ml-1 mt-1 text-5xl tracking-tight',
               featured ? 'text-white' : 'text-slate-900'
             )}
           >
@@ -83,7 +83,7 @@ function Plan({ name, description, price, features, href, featured }) {
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
         >
-          Get started
+          Coming soon
         </Button>
       </div>
     </div>
@@ -102,37 +102,29 @@ export function Pricing() {
           Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pick your package
+          Get your copy
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          “Everything Starts as a Square” is available in two different packages
-          so you can pick the one that’s right for you.
+          'Humans in the Extreme' is available to purchase as a physical book, or alternatively as an audiobook through audible.
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
-            name="Humans in the Extreme"
-            description="Difficult to design without knowing how people buy the book"
-            price={15}
-            href="#"
+            name="Audiobook/Physical edition"
+            description="Purchase a single copy of either the audiobook or physical copy of the book via Amazon"
+            price={'12.99/14.99'}
+            href="#mailing"
             features={[
-              'We could have a preorder?',
-              'This could redirect to a book site',
-              'Any extras the book offers (e.g audio)',
             ]}
           />
           <Plan
             featured
-            name="Pre-order"
-            description="Maybe this is seperate to begin with?"
-            price={11.99}
-            href="#"
-            features={[
-              'Early access',
-              'Author note?',
-              'I really have no idea',
-            ]}
+            name="Complete edition"
+            description="Purchase the complete edition including both a physical copy and an audiobook"
+            price={'20.99'}
+            href="#mailing"
+            features={[]}
           />
         </div>
       </div>

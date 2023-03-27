@@ -7,13 +7,9 @@ import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
-import { Resources } from '@/components/Resources'
-import { Screencasts } from '@/components/Screencasts'
+import { Themes } from '@/components/Themes'
 import { TableOfContents } from '@/components/TableOfContents'
-import { Testimonial } from '@/components/Testimonial'
-import { Testimonials } from '@/components/Testimonials'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
+
 
 export default function Home() {
   return (
@@ -42,9 +38,10 @@ export default function Home() {
         <p>
           “We could include any additional reviews or testomonials if and when you have them!”
         </p>
-      </Testimonial>
-      <FreeChapters /> */}
+      </Testimonial>*/}
+      <FreeChapters /> 
       <Pricing />
+      <Themes />
       <Author />
       <Footer />
     </>

@@ -14,6 +14,7 @@ const sections = [
     ),
   },
   { id: 'pricing', title: 'Pricing' },
+  { id: 'themes', title: 'Themes'},
   { id: 'author', title: 'Author' },
 ]
 

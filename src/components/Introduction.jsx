@@ -37,10 +37,10 @@ export function Introduction() {
         </ul> */}
         <p className="mt-10">
           <Link
-            href="#free-chapters"
+            href="#mailing"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Get two free chapters straight to your inbox{' '}
+            Sign up for updates on 'Humans in the Extreme'{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
