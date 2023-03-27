@@ -65,12 +65,10 @@ export function Themes() {
           Themes
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Explore some of the themes that are explored within `Humans in the Extreme` by reading through some samples of chapters within the book.
+          Explore some of the themes that are explored within `Humans in the Extreme`.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Learn how to design your very first icons in a series of themes
-          that will teach you everything you need to know to go from beginner to
-          pro in just over an hour.
+        Read through some samples of chapters within the book by selecting one of the themes below as a preview.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
