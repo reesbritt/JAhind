@@ -68,7 +68,7 @@ export function Hero() {
              A thought-provoking discourse about our obsession with the extreme, written by J.A Hind.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
+              <Button href="#mailing" color="blue">
                 Keep me updated
               </Button>
               <Button href="#pricing" variant="outline" color="blue">
