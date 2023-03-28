@@ -25,26 +25,18 @@ export function Author() {
       </div>
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
         <div className="bg-slate-50 pt-px sm:rounded-6xl">
-          {/* <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-            <Image
-              className="absolute inset-0 h-full w-full object-cover"
-              src={authorImage}
-              alt=""
-              sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
-            />
-          </div> */}
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
             <SectionHeading number="4" id="author-title">
               Author
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">J.A Hind –</span> A bit about me,
-               the author behind ‘Humans in the Extreme’.
+              <span className="block text-blue-600">J.A Hind –</span> A bit about
+               the author behind &apos;Humans in the Extreme&apos;.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-            My name is Jane Amelda Hind, born in North London in 1964 to Maureen and Charles Feeney. My family has originated from Cleggan, a quaint fishing village on the west coast of Ireland which holds much appeal for writers and artists for its beauty and tragic history. 
-            I am a qualified psychotherapist and over the years I has worked with victims of physical and/or sexual violence, offering clinical support to ex-offenders of violence and sexual abuse - in a bid to reduce and manage any risk of them further offending. 
-            Whilst my encounters with perpetrators of violence have surged in recent years, so too has my interest to understand our human relationship with the extreme, in all its forms.
+            Jane Amelda Hind was born in North London, England in 1964, to Maureen and Charles Feeney. Her family has originated from Cleggan, a quaint fishing village on the west coast of Ireland which holds much appeal for writers and artists for its beauty and tragic history. 
+            Jane is a qualified psychotherapist and over the years she has worked with victims of physical and/or sexual violence, offering clinical support to ex-offenders of violence and sexual abuse - in a bid to reduce and manage any risk of them further offending. 
+            Whilst her encounters with perpetrators of violence have surged in recent years, so too has her interest to understand our human relationship with the extreme, in all its forms.
             </p>
             <p className="mt-8">
               <Link

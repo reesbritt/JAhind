@@ -37,8 +37,7 @@ export function TableOfContents() {
           need to know is inside.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Humans in the Extreme” is comprised of 240 *adjective about book* pages taking you on a journey to question everything you need to know
-          about our human nature.
+        &apos;Humans in the Extreme&apos; is comprised of 240 pages of captivating and, at times, highly charged content, immersing you ever deeper into the mind-blowing intricacies of our human nature.
         </p>
         <Expandable>
           {({ isExpanded }) => (
