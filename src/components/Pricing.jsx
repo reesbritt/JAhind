@@ -85,6 +85,7 @@ function Plan({ name, description, price, features, href, featured }) {
         >
           Coming soon
         </Button>
+        {!featured && <p className='text-sm text-slate-600 text-center mt-4'>Also available at Book Depository</p>}
       </div>
     </div>
   )

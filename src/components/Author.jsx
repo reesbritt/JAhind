@@ -4,11 +4,21 @@ import Link from 'next/link'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
 import authorImage from '@/images/avatars/author.png'
+import { Expandable } from './Expandable'
 
 function TwitterIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 40 40" {...props}>
       <path d="M13.817 33.753c12.579 0 19.459-10.422 19.459-19.458 0-.297 0-.592-.02-.884a13.913 13.913 0 0 0 3.411-3.543 13.65 13.65 0 0 1-3.928 1.077 6.864 6.864 0 0 0 3.007-3.784 13.707 13.707 0 0 1-4.342 1.66 6.845 6.845 0 0 0-11.655 6.239A19.417 19.417 0 0 1 5.654 7.915a6.843 6.843 0 0 0 2.117 9.128 6.786 6.786 0 0 1-3.104-.853v.086a6.842 6.842 0 0 0 5.487 6.704 6.825 6.825 0 0 1-3.088.116 6.847 6.847 0 0 0 6.39 4.75A13.721 13.721 0 0 1 3.334 30.68a19.36 19.36 0 0 0 10.483 3.066" />
+    </svg>
+  )
+}
+
+function EmailIcon(props) {
+  return (
+    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"></path>
+      <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"></path>
     </svg>
   )
 }
@@ -33,11 +43,19 @@ export function Author() {
               <span className="block text-blue-600">J.A Hind –</span> A bit about
                the author behind &apos;Humans in the Extreme&apos;.
             </p>
+            <Expandable>
+          {({ isExpanded }) => {
+            const additionalText = "This tragic account of human suffering, loss and fortitude has instilled in Jane a valuable life lesson. Not only in terms of the fragility of our existence, but also the indomitable spirit of the human being, when faced with their own mortality. Another humbling lesson that her grandfather’s incredible bravery has taught her is that where it may be easy to be selfless when things are going well, the real test is often when we are up against the odds. Although the circumstances that most of us will face in a lifetime will rarely come close to what happened to Jane’s Grandfather, the question as to what it is that drives one person to lay their life on the line for others and another to ‘abandon ship’, so to speak, is very much at the heart of her book, Humans in the Extreme. Her Grandfather’s resolution and compassion, in the face of 'extreme' has, she feels, also orientated her professionally. Prior to becoming a psychotherapist, Jane launched a career in nursing; supporting and navigating patients and their families through often life-changing traumas. Being able to make a difference in other people’s lives continues to be a major part of her work as a psychotherapist. In addition to her therapy work, Jane has also lectured students in counselling at Herts Regional College in Ware and facilitated training workshops for NHS staff and schools in Hertfordshire. Connecting with people from all walks of life who have often experienced the most difficult of circumstances remains an integral part of her work. Over the years, she has worked with victims of physical and/or sexual violence and offered clinical support to ex-offenders of violence and sexual abuse in a bid to reduce and manage any risk of them further offending. Whilst her encounters with perpetrators of violence have surged in recent years, so too has her interest to understand our human relationship with the extreme, in all its forms. It is because of this that Jane decided to move beyond the doorstep of her native subject psychology and explore those other influencing factors that can sway the human condition. By researching and reviewing the work of many renowned scientific and historical writers, she has been able to assemble a more comprehensive ‘take’ on the concept of extreme whilst putting a psychological frame to it.'";
+            return (<>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Jane Amelda Hind was born in North London, England in 1964, to Maureen and Charles Feeney. Her family has originated from Cleggan, a quaint fishing village on the west coast of Ireland which holds much appeal for writers and artists for its beauty and tragic history. 
-            Jane is a qualified psychotherapist and over the years she has worked with victims of physical and/or sexual violence, offering clinical support to ex-offenders of violence and sexual abuse - in a bid to reduce and manage any risk of them further offending. 
-            Whilst her encounters with perpetrators of violence have surged in recent years, so too has her interest to understand our human relationship with the extreme, in all its forms.
+            Jane Amelda Hind was born in North London, England and is the second youngest of seven children. Her parents, Maureen and Charles Feeney, originated from Cleggan, which is a small fishing village on the west coast of Ireland. Where Cleggan holds much appeal – especially for writers and artists, the most notable being the poet Richard Murphy - it is also etched in tragedy. For it was on a night in October 1927 that 45 local fishermen lost their lives to a severe and most unexpected storm, now known as ‘The Cleggan Bay Disaster’. Festus Feeney, the captain of one of the fishing boats, was the only man able to steer his boat home safely that night and, in doing so, saved not just himself but also the lives of his entire crew. This story has much pertinence to Jane because Festus Feeney was her Grandfather.<br/>
+            { isExpanded && additionalText}
             </p>
+              <Expandable.Button>See more</Expandable.Button>
+            </>)
+          }}
+        </Expandable>
+{/* 
             <p className="mt-8">
               <Link
                 href="#"
@@ -46,7 +64,15 @@ export function Author() {
                 <TwitterIcon className="h-10 w-10 fill-current" />
                 <span className="ml-4">Follow on Twitter</span>
               </Link>
-              Can add email button too
+            </p> */}
+            <p className="mt-8">
+              <Link
+                href="mailto:jane.hind@nhs.net"
+                className="inline-flex items-center text-base font-medium tracking-tight text-slate-600"
+              >
+                <EmailIcon className="h-10 w-10 fill-current" />
+                <span className="ml-4">Send an email</span>
+              </Link>
             </p>
           </div>
         </div>

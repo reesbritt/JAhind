@@ -3,11 +3,12 @@ import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 import { useState } from 'react'
 
+
 export function FreeChapters() {
   const [submitted, setSubmitted] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setSubmitted(true);
   }
   return (
@@ -30,34 +31,35 @@ export function FreeChapters() {
               Enter your email address here to get the latest updates on events, releases and upcoming projects
             </p>
           </div>
-          <form className="lg:pl-16" action="https://github.us8.list-manage.com/subscribe/post?u=a1d9a2a6c6e758d797bafc4f6&amp;id=2e2650f395&amp;f_id=006e71e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate onSubmit={handleSubmit}>
-            <h3 className="text-base font-medium tracking-tight text-white">
-              Sign up to my mailing list{' '}
-              <span aria-hidden="true">&rarr;</span>
-            </h3>
-            {!submitted && <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
-              <div className="relative sm:static sm:flex-auto">
-                <input
-                  type="email"
-                  name="EMAIL"
-                  id="mce-EMAIL" 
-                  required               
-                  aria-label="Email address"
-                  placeholder="Email address"
-                  className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
-                />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
-              </div>
-              <Button
-                type="submit"
-                color="white"
-                className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
-              >
-                Sign me up!
-              </Button>
-            </div>}
-            {submitted && <p className='text-base text-xl font-bold tracking-tight text-white'>Thanks for signing up!</p>}
-          </form>
+            <form className="lg:pl-16 validate" action="https://github.us8.list-manage.com/subscribe/post-json?u=a1d9a2a6c6e758d797bafc4f6&amp;id=2e2650f395&amp;f_id=006e71e0f0&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="formresponse" noValidate onSubmit={handleSubmit}>
+              <h3 className="text-base font-medium tracking-tight text-white">
+                Sign up to my mailing list{' '}
+                <span aria-hidden="true">&rarr;</span>
+              </h3>
+              { <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
+                <div className={submitted ? 'hidden' : "relative sm:static sm:flex-auto"}>
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    id="mce-EMAIL" 
+                    required               
+                    aria-label="Email address"
+                    placeholder="Email address"
+                    className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
+                  />
+                  <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                </div>
+                <Button
+                  type="submit"
+                  color="white"
+                  className={submitted ? 'hidden' :  "mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none" }
+                >
+                  Sign me up!
+                </Button>
+              </div>}
+              {submitted && <p className='text-base text-xl font-bold tracking-tight text-white'>Thanks for signing up!</p>}
+            </form>
+            <iframe name='formresponse' width='0' height='0'></iframe>
         </Container>
       </div>
     </section>

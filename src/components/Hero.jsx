@@ -62,7 +62,7 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-            A journey into the chiselling away of our humanity.
+            A journey into the potential chiselling away of our humanity.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
              A thought-provoking discourse about our obsession with the extreme, written by J.A Hind.

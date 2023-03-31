@@ -1,6 +1,16 @@
+import TagManager  from 'react-gtm-module'
 import { Head, Html, Main, NextScript } from 'next/document'
+import { useEffect } from 'react';
+
+const tagManagerArgs = {
+  gtmID: 'GTM-P6DK3L7',
+}
+
 
 export default function Document() {
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+  }, [])
   return (
     <Html className="scroll-smooth bg-white antialiased" lang="en">
       <Head>
@@ -23,6 +33,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
+        
       </Head>
       <body>
         <Main />
