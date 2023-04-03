@@ -25,10 +25,10 @@ export function FreeChapters() {
           <Pattern className="absolute -top-32 left-0 w-full sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-              Keep up with upcoming events and updates
+              Be notified when the book is available to purchase 
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address here to get the latest updates on events, releases and upcoming projects
+              Enter your email address here to be updated once `Humans in the extreme` is released and available to purchase
             </p>
           </div>
             <form className="lg:pl-16 validate" action="https://github.us8.list-manage.com/subscribe/post-json?u=a1d9a2a6c6e758d797bafc4f6&amp;id=2e2650f395&amp;f_id=006e71e0f0&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="formresponse" noValidate onSubmit={handleSubmit}>

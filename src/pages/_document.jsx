@@ -10,6 +10,11 @@ const tagManagerArgs = {
 export default function Document() {
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init(constants.siteMeta.FacebookPixelID);
+      });
   }, [])
   return (
     <Html className="scroll-smooth bg-white antialiased" lang="en">

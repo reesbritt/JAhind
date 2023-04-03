@@ -9,15 +9,15 @@ import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
 import { Themes } from '@/components/Themes'
 import { TableOfContents } from '@/components/TableOfContents'
+import { Helmet } from 'react-helmet'
+import Script from 'next/script'
 
 
 export default function Home() {
+
   return (
     <>
       <Head>
-        <title>
-          J.A.Hind - Humans In The Extreme
-        </title>
         <meta
           name="description"
           content="A website for the author JAHind to share her work, in particular her book Humans in the Extreme"
