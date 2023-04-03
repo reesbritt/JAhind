@@ -77,7 +77,7 @@ export function Themes() {
         >
           {videos.map((video, index) => {
             const liClassnames = activePane === index ? 'bg-blue-50 p-4 md:mb-80' : 'p-4';
-            const details = activePane !== index ? null : (
+            const details = activePane !== index ? <div/> : (
               <div className='bg-blue-50 p-12 px-8 lg:px-32 tracking-tight text-slate-700 text-lg lg:absolute md:left-0'>
                 <p className='font-display text-4xl font-bold tracking-tight text-slate-900 pb-8'>{videos[activePane].chapterName}</p>
                 <p>{videos[activePane].synopsis}</p>

@@ -55,16 +55,6 @@ export function Author() {
             </>)
           }}
         </Expandable>
-{/* 
-            <p className="mt-8">
-              <Link
-                href="#"
-                className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
-              >
-                <TwitterIcon className="h-10 w-10 fill-current" />
-                <span className="ml-4">Follow on Twitter</span>
-              </Link>
-            </p> */}
             <p className="mt-8">
               <Link
                 href="mailto:jane.hind@nhs.net"

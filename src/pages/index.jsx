@@ -16,29 +16,17 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Everything Starts as a Square - Get lost in the world of icon design
+          J.A.Hind - Humans In The Extreme
         </title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch. "
+          content="A website for the author JAHind to share her work, in particular her book Humans in the Extreme"
         />
       </Head>
       <Hero />
       <Introduction />
       <NavBar />
       <TableOfContents />
-      {/* <Testimonial
-        id="testimonial-from-tommy-stroman"
-        author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
-          image: avatarImage1,
-        }}
-      >
-        <p>
-          “We could include any additional reviews or testomonials if and when you have them!”
-        </p>
-      </Testimonial>*/}
       <FreeChapters /> 
       <Pricing />
       <Themes />
