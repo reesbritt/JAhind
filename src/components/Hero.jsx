@@ -19,10 +19,10 @@ function Testimonial() {
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
         <strong className="font-semibold text-blue-600 before:content-['—_']">
-          Prof Michael Kirby FRCP
+          Prof. Michael Kirby FRCP
         </strong>
         <br/>
-        Editor - Trends in urology & Mens health
+        Editor - Trends in Urology and Mens Health
       </figcaption>
     </figure>
   )
@@ -65,7 +65,7 @@ export function Hero() {
             A journey into the potential chiselling away of our humanity.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-             A thought-provoking discourse about our obsession with the extreme, written by J.A Hind.
+            A thought-provoking discourse about our obsession with the extreme, written by JA Hind.
             </p>
             <div className="mt-8 flex gap-4">
               <Button href="#mailing" color="blue">

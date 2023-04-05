@@ -28,7 +28,7 @@ export function FreeChapters() {
               Be notified when the book is available to purchase 
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address here to be updated once `Humans in the extreme` is released and available to purchase
+              Enter your email address here to be updated once `Humans in the Extreme` is released and available to purchase
             </p>
           </div>
             <form className="lg:pl-16 validate" action="https://github.us8.list-manage.com/subscribe/post-json?u=a1d9a2a6c6e758d797bafc4f6&amp;id=2e2650f395&amp;f_id=006e71e0f0&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="formresponse" noValidate onSubmit={handleSubmit}>

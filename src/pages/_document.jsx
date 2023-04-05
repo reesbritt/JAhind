@@ -10,10 +10,18 @@ const tagManagerArgs = {
 export default function Document() {
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'pageview',
+        pagePath: 'jahind',
+        pageTitle: 'jahind',
+      }
+    })
     import("react-facebook-pixel")
       .then((x) => x.default)
       .then((ReactPixel) => {
         ReactPixel.init(constants.siteMeta.FacebookPixelID);
+        ReactPixel.pageView();
       });
   }, [])
   return (

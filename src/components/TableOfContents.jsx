@@ -33,8 +33,7 @@ export function TableOfContents() {
           Table of contents
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Take a look at all of the content covered in the book. Everything you
-          need to know is inside.
+          Take a look at all of the content covered in the book.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
         &apos;Humans in the Extreme&apos; is comprised of 240 pages of captivating and, at times, highly charged content, immersing you ever deeper into the mind-blowing intricacies of our human nature.
