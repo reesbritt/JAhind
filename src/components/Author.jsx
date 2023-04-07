@@ -58,7 +58,7 @@ export function Author() {
               </>
             )}
             </p>
-              <Expandable.Button>See more</Expandable.Button>
+              {!isExpanded && <Expandable.Button>Click here to read more</Expandable.Button>}
             </>)
           }}
         </Expandable>

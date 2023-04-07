@@ -38,9 +38,6 @@ export function TableOfContents() {
         <p className="mt-4 text-lg tracking-tight text-slate-700">
         &apos;Humans in the Extreme&apos; is comprised of 240 pages of captivating and, at times, highly charged content, immersing you ever deeper into the mind-blowing intricacies of our human nature.
         </p>
-        <Expandable>
-          {({ isExpanded }) => (
-            <>
               <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
                 {Object.entries(tableOfContents)
                   .map(([title, pages]) => (
@@ -53,7 +50,6 @@ export function TableOfContents() {
                         className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 py-3 px-6 text-base tracking-tight sm:py-7 sm:px-8"
                       >
                         {Object.entries(pages)
-                          .slice(0, isExpanded ? undefined : 4)
                           .map(([title, pageNumber]) => (
                           <li
                             key={title}
@@ -78,10 +74,6 @@ export function TableOfContents() {
                     </li>
                   ))}
               </ol>
-              <Expandable.Button>See more</Expandable.Button>
-            </>
-          )}
-        </Expandable>
       </Container>
     </section>
   )

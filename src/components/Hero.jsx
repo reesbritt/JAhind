@@ -22,7 +22,7 @@ function Testimonial() {
           Prof. Michael Kirby FRCP
         </strong>
         <br/>
-        Editor - Trends in Urology and Mens Health
+        Editor - Trends in Urology and Men&apos;s Health
       </figcaption>
     </figure>
   )

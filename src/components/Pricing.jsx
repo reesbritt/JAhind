@@ -10,8 +10,9 @@ function Plan({ name, description, price, features, href, featured }) {
   return (
     <div
       className={clsx(
-        'relative px-4 py-16 sm:rounded-5xl sm:px-10 md:py-12 lg:px-12',
-        featured && 'bg-blue-600 sm:shadow-lg'
+        'relative py-16 sm:rounded-5xl md:py-12 px-4',
+        !featured && 'md:px-0',
+        featured && 'bg-blue-600 sm:shadow-lg px-4 sm:px-10 lg:px-12 md:ml-12'
       )}
     >
       {featured && (
@@ -23,6 +24,7 @@ function Plan({ name, description, price, features, href, featured }) {
         <h3
           className={clsx(
             'mt-7 text-lg font-semibold tracking-tight',
+            !featured && 'md:text-center',
             featured ? 'text-white' : 'text-slate-900'
           )}
         >
@@ -31,6 +33,7 @@ function Plan({ name, description, price, features, href, featured }) {
         <p
           className={clsx(
             'mt-2 text-lg tracking-tight',
+            !featured && 'md:text-center',
             featured ? 'text-white' : 'text-slate-600'
           )}
         >
@@ -47,7 +50,7 @@ function Plan({ name, description, price, features, href, featured }) {
           </span>
           <span
             className={clsx(
-              'ml-1 mt-1 text-5xl tracking-tight',
+              'ml-1 mt-1 text-4xl md:text-5xl tracking-tight',
               featured ? 'text-white' : 'text-slate-900'
             )}
           >
@@ -112,9 +115,9 @@ export function Pricing() {
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
-            name="Audiobook/Physical edition"
-            description="Purchase a single copy of either the audiobook or physical copy of the book via Amazon"
-            price={'12.99/14.99'}
+            name="Ebook/Audiobook/Physical edition"
+            description="Purchase a single copy of either the Ebook, audiobook or physical copy of the book via Amazon"
+            price={'4.99/12.99/14.99'}
             href="#mailing"
             features={[
             ]}
