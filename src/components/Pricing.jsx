@@ -86,9 +86,9 @@ function Plan({ name, description, price, features, href, featured }) {
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
         >
-          Coming soon
+          Buy now
         </Button>
-        {!featured && <p className='text-sm text-slate-600 text-center mt-4'>Also available at Book Depository</p>}
+        {!featured && <p className='text-sm text-slate-600 text-center mt-4'>Ebook and Audio versions coming soon</p>}
       </div>
     </div>
   )
@@ -117,17 +117,16 @@ export function Pricing() {
           <Plan
             name="Ebook/Audiobook/Physical edition"
             description="Purchase a single copy of either the Ebook, audiobook or physical copy of the book via Amazon"
-            price={'4.99/12.99/14.99'}
-            href="#mailing"
-            features={[
-            ]}
+            price={'4.99/12.99/18.02'}
+            href="https://www.amazon.co.uk/Humans-Extreme-gripping-darkest-recesses/dp/1789633621"
+            features={[]}
           />
           <Plan
             featured
-            name="Complete edition"
-            description="Purchase the complete edition including both a physical copy and an audiobook"
-            price={'20.99'}
-            href="#mailing"
+            name="Waterstones: Physical edition"
+            description="Purchase the the physical edition via Waterstones"
+            price={'14.99'}
+            href="https://www.waterstones.com/book/humans-in-the-extreme/j-a-hind/9781789633627"
             features={[]}
           />
         </div>

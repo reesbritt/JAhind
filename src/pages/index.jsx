@@ -18,9 +18,10 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>J A Hind - Humans in the Extreme</title>
         <meta
           name="description"
-          content="A website for the author JAHind to share her work, in particular her book Humans in the Extreme"
+          content="The book, Humans in the Extreme, is a thought-provoking discourse about our obsession with the extreme, written by JA Hind."
         />
       </Head>
       <Hero />
