@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import authorImage from '@/images/avatars/author.jpeg'
+import authorImage from '@/images/avatars/author.jpg'
 import { Expandable } from './Expandable'
 
 function InstaIcon(props) {

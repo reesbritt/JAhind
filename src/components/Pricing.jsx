@@ -88,7 +88,7 @@ function Plan({ name, description, price, features, href, featured }) {
         >
           Buy now
         </Button>
-        {!featured && <p className='text-sm text-slate-600 text-center mt-4'>Ebook and Audio versions coming soon</p>}
+        {!featured && <p className='text-sm text-slate-900 font-bold text-center mt-4'>Ebook and Audio versions coming soon</p>}
       </div>
     </div>
   )
@@ -124,7 +124,7 @@ export function Pricing() {
           <Plan
             featured
             name="Waterstones: Physical edition"
-            description="Purchase the the physical edition via Waterstones"
+            description="Purchase the physical edition via Waterstones"
             price={'14.99'}
             href="https://www.waterstones.com/book/humans-in-the-extreme/j-a-hind/9781789633627"
             features={[]}

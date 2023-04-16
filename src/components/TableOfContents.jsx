@@ -36,7 +36,7 @@ export function TableOfContents() {
           Take a look at all of the content covered in the book.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-        &apos;Humans in the Extreme&apos; is comprised of 240 pages of captivating and, at times, highly charged content, immersing you ever deeper into the mind-blowing intricacies of our human nature.
+        &apos;Humans in the Extreme&apos; is comprised of 330 pages of captivating and, at times, highly charged content, immersing you ever deeper into the mind-blowing intricacies of our human nature.
         </p>
               <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
                 {Object.entries(tableOfContents)
