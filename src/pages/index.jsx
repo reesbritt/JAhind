@@ -9,8 +9,6 @@ import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
 import { Themes } from '@/components/Themes'
 import { TableOfContents } from '@/components/TableOfContents'
-import { Helmet } from 'react-helmet'
-import Script from 'next/script'
 
 
 export default function Home() {

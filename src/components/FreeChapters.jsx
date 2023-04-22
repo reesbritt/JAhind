@@ -1,16 +1,23 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 
 export function FreeChapters() {
-  const [submitted, setSubmitted] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
-    setSubmitted(true);
+    const email = e.target[0].value;
+    if(email.includes('@') && email.includes('.')){
+      setError(false);
+      setSubmitted(true);
+    } else {
+      setError(true)
+    }
   }
+
   return (
     <section
       id="mailing"
@@ -58,6 +65,7 @@ export function FreeChapters() {
                 </Button>
               </div>}
               {submitted && <p className='text-base text-xl font-bold tracking-tight text-white'>Thanks for signing up!</p>}
+              {error && <p className='text-base text-xl font-bold tracking-tight text-white'>Please enter a valid email address!</p>}
             </form>
             <iframe name='formresponse' width='0' height='0'></iframe>
         </Container>
