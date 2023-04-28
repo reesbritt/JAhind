@@ -9,6 +9,7 @@ import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
 import { Themes } from '@/components/Themes'
 import { TableOfContents } from '@/components/TableOfContents'
+import { Resources } from '@/components/Resources'
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       <FreeChapters /> 
       <Pricing />
       <Themes />
+      <Resources/>
       <Author />
       <Footer />
     </>

@@ -9,49 +9,15 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'Mix 92.6 Radio Interview',
     description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'Listen to a 10 minute radio interview about Humans in the extreme, with author JA Hind.',
     image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
-          <Image src={figmaImage} alt="" unoptimized />
-        </div>
-      )
-    },
-  },
-  {
-    title: 'Weekly icon teardowns',
-    description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
-    image: function VideoPlayerImage() {
-      return (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <Image
-            className="absolute inset-0 h-full w-full object-cover"
-            src={abstractBackgroundImage}
-            alt=""
-            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
-          />
-          <Image
-            className="relative"
-            src={videoPlayerImage}
-            alt=""
-            unoptimized
-          />
-        </div>
-      )
-    },
-  },
-  {
-    title: 'Community of icon designers',
-    description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
-    image: function DiscordImage() {
-      return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
-        </div>
+        <><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1502094901%3Fsecret_token%3Ds-ZYWy80aZ5Qh&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style={{fontSize: '10px', color: '#cccccc',lineBreak: 'anywhere', wordBreak: 'normal',overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', fontFamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif', fontWeight: '100'}}>
+          <a href="https://soundcloud.com/jahind" title="JA Hind" target="_blank" style={{color: '#cccccc', textDecoration: 'none'}} rel="noreferrer">JA Hind</a> · 
+          <a href="https://soundcloud.com/jahind/jahind-human-in-the-extreme-radio-interview/s-ZYWy80aZ5Qh" title="JAHind- Human in the Extreme - Radio Interview" target="_blank" style={{color: '#cccccc', textDecoration: 'none'}} rel="noreferrer">JAHind- Human in the Extreme - Radio Interview</a></div></>
       )
     },
   },
@@ -65,24 +31,22 @@ export function Resources() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="resources-title">
-          Resources
+        <SectionHeading number="4" id="resources-title">
+          Media
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+          Learn more about Humans in the Extreme by exploring some more media from JA Hind.
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
-        </p>
+        {/* <p className="mt-4 text-lg tracking-tight text-slate-700">
+          Want to know a bit more? Explore some of the content below to discover
+        </p> */}
       </Container>
       <Container size="lg" className="mt-16">
         <ol
           role="list"
           className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
         >
+          <li></li>
           {resources.map((resource) => (
             <li
               key={resource.title}
@@ -101,6 +65,7 @@ export function Resources() {
               </div>
             </li>
           ))}
+          <li></li>
         </ol>
       </Container>
     </section>
