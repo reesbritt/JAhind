@@ -27,7 +27,6 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <TableOfContents />
-      <FreeChapters /> 
       <Pricing />
       <Themes />
       <Resources/>

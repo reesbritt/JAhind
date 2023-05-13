@@ -88,7 +88,6 @@ function Plan({ name, description, price, features, href, featured }) {
         >
           Buy now
         </Button>
-        {!featured && <p className='text-sm text-slate-900 font-bold text-center mt-4'>Ebook and Audio versions coming soon</p>}
       </div>
     </div>
   )
@@ -117,7 +116,7 @@ export function Pricing() {
           <Plan
             name="Ebook/Audiobook/Physical edition"
             description="Purchase a single copy of either the Ebook, audiobook or physical copy of the book via Amazon"
-            price={'4.99/12.99/14.99'}
+            price={'4.99/16.99/14.99'}
             href="https://www.amazon.co.uk/Humans-Extreme-gripping-darkest-recesses/dp/1789633621"
             features={[]}
           />
