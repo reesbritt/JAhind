@@ -51,7 +51,7 @@ export function Hero() {
             <Image className="w-full" src={coverImage} alt="" priority />
           </div>
           <div className='p-4 bg-white relative mt-4 z-10 mx-auto flex flex-col w-64 rounded-xxl shadow-xl md:w-80 lg:w-full'>
-            <p className='text-3xl text-slate-900 text-center pb-2 '>Releases 1st May</p>
+            <p className='text-3xl text-slate-900 text-center pb-2 '>Released 1st May</p>
             <Countdown date={new Date('2023-05-01')} renderer={renderCountdown}/>
           </div>
         </div>
