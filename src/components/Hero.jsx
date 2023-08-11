@@ -28,13 +28,6 @@ function Testimonial() {
   )
 }
 
-const renderCountdown = ({ completed, days, hours, minutes }) => {
-  if(completed) {
-    return <p>Out Now!</p>
-  }
-  return <p className='text-3xl text-slate-900 text-center font-bold'>{days} days {hours} hours {minutes} minutes</p>
-}
-
 export function Hero() {
   return (
     <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
@@ -49,10 +42,6 @@ export function Hero() {
           </div>
           <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-white shadow-xl md:w-80 lg:w-full xl:px-2">
             <Image className="w-full" src={coverImage} alt="" priority />
-          </div>
-          <div className='p-4 bg-white relative mt-4 z-10 mx-auto flex flex-col w-64 rounded-xxl shadow-xl md:w-80 lg:w-full'>
-            <p className='text-3xl text-slate-900 text-center pb-2 '>Released 1st May</p>
-            <Countdown date={new Date('2023-05-01')} renderer={renderCountdown}/>
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
