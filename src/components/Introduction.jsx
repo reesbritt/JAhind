@@ -21,10 +21,10 @@ export function Introduction() {
         </p>
         <p className="mt-10">
           <Link
-            href="#mailing"
+            href="#author"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Sign up for updates on &apos;Humans in the Extreme&apos;{' '}
+            Contact the author of &apos;Humans in the Extreme&apos;{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
