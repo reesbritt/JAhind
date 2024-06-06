@@ -6,6 +6,24 @@ import { SectionHeading } from '@/components/SectionHeading'
 import authorImage from '@/images/avatars/author.png'
 import { Expandable } from './Expandable'
 
+function DownArrow(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6 h-8 w-8 rounded-full bg-gray-100 p-2"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+      />
+    </svg>
+  )
+}
 function InstaIcon(props) {
   return (
     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -35,7 +53,7 @@ export function Author() {
     <section
       id="author"
       aria-labelledby="author-title"
-      className="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative scroll-mt-14 pb-3 pt-8 pt-16 sm:scroll-mt-32 sm:pb-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
@@ -51,12 +69,13 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="author-title">
-              Author
-            </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">JA Hind –</span> A bit about
-              the author behind &apos;Humans in the Extreme&apos;.
+              <span className="block text-blue-600">JA Hind –</span> Author,
+              Commentator and Qualified psychotherapist.
+            </p>
+            <p className="pt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+              It could have a small sentence here for added information if
+              needed.
             </p>
             <Expandable>
               {({ isExpanded }) => {
@@ -67,57 +86,46 @@ export function Author() {
                 return (
                   <>
                     <p className="mt-4 text-lg tracking-tight text-slate-700">
-                      Jane Amelda Hind was born in North London, England and is
-                      the second youngest of seven children. Her parents,
-                      Maureen and Charles Feeney, originated from Cleggan, which
-                      is a small fishing village on the west coast of Ireland.
-                      Where Cleggan holds much appeal – especially for writers
-                      and artists, the most notable being the poet Richard
-                      Murphy - it is also etched in tragedy. For it was on a
-                      night in October 1927 that 45 local fishermen lost their
-                      lives to a severe and most unexpected storm, now known as
-                      ‘The Cleggan Bay Disaster’. Festus Feeney, the captain of
-                      one of the fishing boats, was the only man able to steer
-                      his boat home safely that night and, in doing so, saved
-                      not just himself but also the lives of his entire crew.
-                      This story has much pertinence to Jane because Festus
-                      Feeney was her Grandfather.
-                      <br />
                       {isExpanded && (
                         <>
+                          Jane Amelda Hind was born in North London, England and
+                          is the second youngest of seven children. Her parents,
+                          Maureen and Charles Feeney, originated from Cleggan,
+                          which is a small fishing village on the west coast of
+                          Ireland. Where Cleggan holds much appeal – especially
+                          for writers and artists, the most notable being the
+                          poet Richard Murphy - it is also etched in tragedy.
+                          For it was on a night in October 1927 that 45 local
+                          fishermen lost their lives to a severe and most
+                          unexpected storm, now known as ‘The Cleggan Bay
+                          Disaster’. Festus Feeney, the captain of one of the
+                          fishing boats, was the only man able to steer his boat
+                          home safely that night and, in doing so, saved not
+                          just himself but also the lives of his entire crew.
+                          This story has much pertinence to Jane because Festus
+                          Feeney was her Grandfather.
+                          <br />
                           {additionalText}
                           <br />
                           {additionalSecondParagraph}
+                          <br />
+                          <Link
+                            href="mailto:jane.hind@nhs.net"
+                            className="mt-8 inline-flex items-center text-base font-medium tracking-tight text-slate-600"
+                          >
+                            <EmailIcon className="h-10 w-10 fill-current" />
+                            <span className="ml-4">Send an email</span>
+                          </Link>
                         </>
                       )}
                     </p>
                     {!isExpanded && (
-                      <Expandable.Button>
-                        Click here to read more
-                      </Expandable.Button>
+                      <Expandable.Button>About JA Hind</Expandable.Button>
                     )}
                   </>
                 )
               }}
             </Expandable>
-            <p className="mt-8">
-              <Link
-                href="mailto:jane.hind@nhs.net"
-                className="inline-flex items-center text-base font-medium tracking-tight text-slate-600"
-              >
-                <EmailIcon className="h-10 w-10 fill-current" />
-                <span className="ml-4">Send an email</span>
-              </Link>
-            </p>
-            <p className="mt-8 ">
-              <Link
-                href="https://www.instagram.com/humansintheextreme/"
-                className="inline-flex items-center text-base font-medium tracking-tight text-violet-600"
-              >
-                <InstaIcon className="ml-1 h-8 w-8" />
-                <span className="ml-4">Follow on Instagram</span>
-              </Link>
-            </p>
           </div>
         </div>
       </div>
